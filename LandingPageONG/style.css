@@ -1,0 +1,113 @@
+/*Global style*/
+
+html *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrap-button-donation{
+    padding: 105rem 0;
+}
+
+#button-donation{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(255, 162, 0);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    padding: 0.25rem;
+}
+
+.logo{
+    max-width: 70px;
+    height: 100%;
+    width: 100%;
+}
+.head-text-section{
+    height: 90vh;
+    background: url(Image/pollitoAmarillo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color:rgb(223, 168, 0) ;
+    /*background-blend-mode: multiply;pone dos capas la de la imagen y la sombra*/
+    p{ 
+        position: absolute;
+        top: 370px;
+        left: 10%;
+        height: 30%;
+        width: 40%;
+    }
+    h1{
+        position: absolute;
+        top: 290px;
+        left: 10%;
+        height: 30%;
+        width:40%;
+    }
+    button{
+        position: absolute;
+        top: 475px;
+        left: 10%;
+        height: 7%;
+        width: 20%;
+    }/*arreglar con media @*/
+}
+
+.wrap-head-text-section{
+    max-width: 600px;
+    color: white;
+    padding: 15%;
+}
+
+/*Logo ONG*/
+.logo-ong{
+    margin: 5rem 0;
+}
+
+.logo-ong h2{
+    padding: 2rem 0;
+}
+
+.wrap-logo-ong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px ;
+}
+
+.img-ong{
+    width: 100px;
+    padding: 1rem 2rem;
+    
+}
