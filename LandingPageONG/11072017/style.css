@@ -1,0 +1,490 @@
+/*Global style*/
+
+html *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.arrow{
+    width: 3%;
+    height: auto;
+    transform: rotate(90deg);
+    position: fixed;
+    margin: 0.8%;
+    bottom: 3%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+.wrap-button-donation{
+    padding: 105rem;
+}
+
+#button-donation{
+    height: 1%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(255, 162, 0);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    padding: 0.25rem;
+}
+
+.logo{
+    max-width: 70px;
+    height: 100%;
+    width: 100%;
+}
+.head-text-section{
+    height: 90vh;
+    background: url(Image/pollitoAmarillo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color:rgb(223, 168, 0) ;
+    /*background-blend-mode: multiply;pone dos capas la de la imagen y la sombra*/
+    p{ 
+        position: absolute;
+        top: 370px;
+        left: 10%;
+        height: 30%;
+        width: 40%;
+        color: black;
+        font-weight: bold;
+    }
+    h1{
+        position: absolute;
+        top: 290px;
+        left: 10%;
+        height: 30%;
+        width:40%;
+    }
+    button{
+        position: absolute;
+        top: 475px;
+        left: 10%;
+        height: 7%;
+        width: 20%;
+    }/*arreglar con media @*/
+}
+
+.wrap-head-text-section{
+    max-width: 600px;
+    color: white;
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align:start;
+    
+}
+
+@media (max-width: 900px) {
+    .wrap-head-text-section {
+        padding: 10%;
+        gap: 20%;
+        position: relative;
+        top: -30%;
+        
+        p{
+            padding: 10%;
+            width: 80%;
+        }
+        
+    }
+    
+}
+
+@media (max-width: 700px) {
+    #button-donation{ 
+        font-size:large;
+        position: relative;
+        top: 50%;
+        text-align: start;
+        padding: 0.9%;
+        height: 7%;
+    }
+}
+/*Logo ONG*/
+.logo-ong{
+    margin: 2rem ;
+    height: 8em;
+}
+
+.logo-ong h2{
+    padding: 2rem 0;
+}
+
+.wrap-logo-ong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px ;
+    box-sizing: border-box
+}
+
+.wrap-logo-ong img{
+    display: block;
+}
+
+@media (max-width: 1140px){
+    .wrap-logo-ong{
+        gap:0px ;
+    }
+    
+} 
+
+
+@media (max-width: 750px) {
+    .wrap-logo-ong {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .wrap-logo-ong img {
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box; /* Asegura que los bordes de la imagen se incluyan en el tamaño total */
+    }
+}
+
+
+.img-ong{
+    width: 100px;
+    padding: 1rem 2rem;
+    border: 0px solid white;
+    border-radius: 50px;
+}
+
+/*Topics*/
+
+.img-head-topics{
+    background-image: url(/Image/tortuga.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 13rem;
+    width: 100%;
+    h2{margin-top: 6.6rem;
+        margin-right: 5rem;
+        color: rgb(252, 252, 252);
+        border: 2px solid white;
+        border-radius: 20px 20px 0px 0px;
+        background-color: #000000a2;
+        position: relative;
+        left: 2.7%;
+    }
+}
+
+@media (max-width: 600px){
+    .img-head-topics{
+        h2{
+            position: relative;
+            left: 10%;
+        }
+    }
+    .wrap-text-description{
+            .form-h3{
+                position: relative;
+            right: 17%;
+            }
+    }
+    
+        .wrap-formulario{
+            position: relative;
+            right: 17%;
+    }
+    
+}
+
+
+
+
+.wrap-head-topics{
+    text-align: center;
+    padding: 3rem;
+}
+
+.wrap-allTopics{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 1%;
+}
+
+.aTopic{
+    padding: 1rem;
+    color: rgb(66, 9, 9);
+    font-weight: bold;
+    img{
+        width: 300px;
+        height: 220px;
+        border-radius: 3%;
+    }
+}
+
+/*About Us*/
+
+.headDescription{
+    text-align: center;
+    padding: 3rem;
+}
+
+.wrap-description{
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    flex-flow: 0 auto;
+    margin: 0 auto;
+}
+
+.wrap-img-description {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    img{
+        border-radius: 50px;
+    }
+    
+}
+
+@media (max-width: 770px){
+    .wrap-img-description img{
+        width: 100%;
+        height: 55%;
+    }
+    .mountain{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .wrap-img-description {
+        display: none;
+    }
+    
+    .wrap-text-description {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+.wrap-text-description{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    h3{
+        padding: 0rem 0;
+        color: rgb(6, 0, 56);
+    }
+}
+
+.wrap-button-description{
+        height: 20%;
+        width: 100%;
+        padding: 8%;
+        button{
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            background-color: rgb(255, 162, 0);
+            padding: .5rem 1rem;
+            border-radius: 5px;
+            width: 100%;
+    }
+} 
+
+/*Form*/
+
+.formulario{
+    background-color: rgb(236, 235, 235);
+    padding: 3rem 0;
+}
+
+.wrap-formulario{
+    padding: 2rem;
+    position: relative;
+    top: -5%;
+    input{
+        border: none;
+        padding: 0.3rem;
+        border-radius: 7%;
+        
+    }
+    textarea{
+        border-radius: 3%;
+        margin: 0% 10% 0% 2%;
+        border: none;
+    }
+    p{
+        margin: 3%;
+    }
+}
+
+.wrap-text-description{
+    h3{
+        text-align: center;
+    }
+}
+
+.n-e-s-input{
+    padding: 1rem;
+    input{
+        width: 100%;
+    }
+}
+
+.submit{
+    width: 100%;
+    background-color: rgb(255, 162, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*Footer*/
+
+.footer {
+    background: -webkit-linear-gradient(left, rgb(255, 162, 0),rgb(138, 99, 30) );
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.subscribe,
+.contact,
+.social {
+    flex: 1;
+    margin-right: 20px;
+    color: white;
+}
+
+.social a{
+    color: #98e1ed;
+    text-decoration: none;
+}
+
+.contact a{
+    text-decoration: none;
+    color:#98e1ed;
+}
+
+.social a:hover{
+    text-decoration:underline;
+    color: #eff5f6;
+}
+
+.contact a:hover{
+    color:#eff5f6;
+    text-decoration:underline;
+}
+.subscribe h3,
+.contact h3,
+.social h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.subscribe input[type="email"],
+.subscribe button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+.subscribe input:focus{
+    border: 4px solid rgb(39, 141, 243);
+    transition: all 0.6 ease;
+}
+
+.subscribe button {
+    background: -webkit-linear-gradient(left, #2b2c6d, #1e7b90 );
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 96%;
+}
+
+.subscribe button:hover{
+    background: -webkit-linear-gradient(left, #095060,#121347 );
+}
+
+.subscribe button:focus{
+    background: -webkit-linear-gradient(left,#121347, #095060 );
+}
+
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social ul li:last-child {
+    margin-right: 0;
+}
+
+.social ul li img {
+    width: 40px;
+    height: 40px;
+}
