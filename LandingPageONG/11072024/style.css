@@ -4,6 +4,7 @@ html *{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -29,19 +30,8 @@ a{
     border-radius: 5px;
 }
 
-
 .wrap-button-donation{
     padding: 105rem;
-}
-
-#button-donation{
-    height: 1%;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: rgb(255, 162, 0);
-    padding: .5rem 1rem;
-    border-radius: 5px;
 }
 
 h1{
@@ -58,18 +48,88 @@ h3{
 
 /*Header*/
 
-header{
+#stickyId{
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    z-index: 200;
     display: flex;
-    justify-content: center;
-    background: rgb(255, 255, 255);
-    padding: 0.25rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    /*backdrop-filter: blur(1px);*/
 }
+#stickyId2{
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 5px 100px;
+    background: #ffffff;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+#headButton{
+        width: 15%;
+        padding: 1%;
+        border: 1px solid rgba(0, 0, 0, 0.238);
+        border-radius: 5%;
+        background: -webkit-linear-gradient(left, rgb(255, 77, 0),rgb(252, 202, 4) );
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.84);
+}
+@media(max-width: 780px){
+    #stickyId2{display: flex;
+        gap: 15%;
+    }
+    #stickyId{
+        display: flex;
+        gap: 15%;
+    }
+    #headButton{position: absolute;
+        left: 1%;
+        bottom: -40%;
+        height: 50%;
+        width: 40%;
+    }
+}
+
+.headP{
+    width: 120%;
+    padding: 7%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    color: rgba(0, 0, 0, 0.84);
+    border: 1px solid black;
+    border-radius: 6%;
+}
+.headP.l, .headP.s{
+        font-size: 140%;
+    }
+
+   
+    
+    #headButton:hover{
+        border: 1px solid rgb(255, 200, 0);
+        font-size: 95%;
+    }
+    #headButton:focus{
+        background: -webkit-linear-gradient(left,rgb(252, 202, 4), rgb(255, 77, 0));
+        
+    }
+    
 
 .logo{
     max-width: 70px;
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: 75%;
 }
+
 .head-text-section{
     height: 90vh;
     background: url(Image/pollitoAmarillo.jpg);
@@ -82,16 +142,17 @@ header{
         position: absolute;
         top: 370px;
         left: 10%;
-        height: 30%;
+        height: 5%;
         width: 40%;
         color: black;
         font-weight: bold;
+        
     }
     h1{
         position: absolute;
         top: 290px;
         left: 10%;
-        height: 30%;
+        height: 2%;
         width:40%;
     }
     button{
@@ -162,31 +223,24 @@ header{
     display: block;
 }
 
-@media (max-width: 1140px){
-    .wrap-logo-ong{
-        gap:0px ;
-    }
-    
-} 
-
-
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
     .wrap-logo-ong {
         display: flex;
         justify-content: center;
         align-items: center; 
+        gap:0px ;
     }
     
     .wrap-logo-ong img {
         max-width: 100%;
-        height: auto;
+        height: 20%;
+        width: 20%;
         box-sizing: border-box; /* Asegura que los bordes de la imagen se incluyan en el tamaño total */
     }
 }
 
-
 .img-ong{
-    width: 100px;
+    width: 200px;
     padding: 1rem 2rem;
     border: 0px solid white;
     border-radius: 50px;
@@ -195,15 +249,16 @@ header{
 /*Topics*/
 
 .img-head-topics{
-    background-image: url(/Image/tortuga.jpg);
+    background-image: url(./Image/tortuga.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
+    border-top: 3px solid rgb(0, 0, 0);
     height: 13rem;
     width: 100%;
     h2{margin-top: 6.6rem;
         margin-right: 5rem;
-        color: rgb(252, 252, 252);
-        border: 2px solid white;
+        color: rgb(218, 219, 133);
+        border: 2px solid rgb(226, 228, 109);
         border-radius: 20px 20px 0px 0px;
         background-color: #000000a2;
         position: relative;
@@ -232,19 +287,18 @@ header{
     
 }
 
-
-
-
 .wrap-head-topics{
     text-align: center;
-    padding: 3rem;
+    padding: 2.8rem;
 }
 
 .wrap-allTopics{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    margin-top: 1%;
+    border-bottom: 1px solid rgba(47, 43, 1, 0.447);
+    background:linear-gradient(rgba(251, 255, 0, 0.397), rgba(255, 149, 1, 0.408));
+    
 }
 
 .aTopic{
@@ -256,6 +310,10 @@ header{
         height: 220px;
         border-radius: 3%;
     }
+    img:hover{
+        box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.312);
+        border-radius: 10%;
+    }
 }
 
 /*About Us*/
@@ -266,7 +324,7 @@ header{
 }
 
 .wrap-description{
-    padding: 10%;
+    padding: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
@@ -295,8 +353,6 @@ header{
         display: none;
     }
 }
-
-
 
 @media (max-width: 700px) {
     .wrap-img-description {
@@ -330,7 +386,7 @@ header{
             color: white;
             font-weight: bold;
             font-size: 1.2rem;
-            background-color: rgb(255, 162, 0);
+            background: -webkit-linear-gradient(left, rgb(255, 77, 0),rgb(252, 202, 4) );
             padding: .5rem 1rem;
             border-radius: 5px;
             width: 100%;
@@ -464,7 +520,6 @@ header{
     background: -webkit-linear-gradient(left,#121347, #095060 );
 }
 
-
 .contact p {
     margin-bottom: 10px;
 }
@@ -487,4 +542,79 @@ header{
 .social ul li img {
     width: 40px;
     height: 40px;
+}
+
+/*//////////////////////////////////////////////////*/
+.hidden {
+    display: none;
+}
+
+.general-container {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin-left: 20%;
+    border: 1px solid #787878;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(152, 91, 0, 0.1);
+    position: absolute;
+    right: 15%;
+    bottom:84.6%;
+    z-index: 100;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.185);
+}
+.radio-container {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /*input[type="radio"]{
+    
+    }*/
+}
+
+.radio-container.inside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.selected {
+    border:1px solid rgba(213, 105, 4, 0.449);
+    background-color: rgba(213, 105, 4, 0.075);
+    border-radius: 6%;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+}
+h4{
+    padding: 5%;
+}
+
+#amount-donation-input{
+    height: 5vh;
+    width: 15vw;
+    border-radius: 5%;
+    border: 3px solid rgb(0, 115, 4);
+    font-size: large;
+    margin: 0% 5% 5% 22%;
+    margin-top: 10%;
+    
+}
+#img-dollar{
+    position: absolute;
+    bottom: 25%;
+}
+
+#donate-button{
+    width: 95%;
+    height: 7vh;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(255, 162, 0);
+    border-radius: 5px;
 }

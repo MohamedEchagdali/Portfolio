@@ -7,81 +7,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="/Image/headLogo.png" alt="logo" id="main">
-
+    <header class="stickyH" id="stickyId" id="stickyId2">
+        <a href="#mission"><p class="headP f">Mission Focus</p></a>
+        <a href="#aboutUs"><p class="headP s">About us</p></a>
+        <a href="#main" id="logoA"><img class="logo" src="./Image/headLogo.png" alt="logo" ></a> 
+        <a href="#contact"><p class="headP l">Contact</p></a>
+        <button id="headButton">Donation</button>
     </header>
-    <a href="#main"><img src="/Image/arrow.png" class="arrow" id="arrowUp"></a>
-    <!--<div class="head-img">
-        <img src="/Image/pollitoAmarillo.jpg" alt="pollitoAmarillo" class="pollitoAmarillo">Temporal, ver si usar en css como fondo-->
+    <a href="#main"><img src="./Image/arrow.png" class="arrow" id="arrowUp"></a>
     </div>
-    
-    <section class="head-text-section">
+
+    <div id="pay-method-container" class="hidden"></div>
+
+    <section class="head-text-section" id="main">    
         <div class="wrap-head-text-section">
             <h1>Helping Paws</h1>
             <p>Welcome, here every pawprint matters. Join us in our mission to protect and care for animals in need. Together, we can make a difference one donation at a time.</p>
-            
         </div>
-            <button id="button-donation">Donation</button>
+
     </section>
     
+
+
     <section class="logo-ong section-ong">
         <div class="wrap-logo-ong">
-            <img class="img-ong" src="/Image/AnimalWelfareInstitute.jpeg" alt="">
-            <img class="img-ong" src="/Image/WWF.png" alt="">
-            <img class="img-ong" src="/Image/aspca.jpg" alt="">
-            <img class="img-ong" src="/Image/ifaw.jpg" alt="">
-            <img class="img-ong" src="/Image/Humane Society International_2.png" alt="">
+            <img class="img-ong" src="./Image/AnimalWelfareInstitute.jpeg" alt="">
+            <img class="img-ong" src="./Image/WWF.png" alt="">
+            <img class="img-ong" src="./Image/aspca.jpg" alt="">
+            <img class="img-ong" src="./Image/ifaw.jpg" alt="">
+            <img class="img-ong" src="./Image/Humane Society International_2.png" alt="">
         </div>
     </section><br>
     
     <div class="img-head-topics">
         <!-- <img src="/Image/tortuga.jpg" alt="">-->
-        <div class="wrap-head-topics">
-            <h2>Mission Focus</h1>
+        <div class="wrap-head-topics" id="mission">
+            <h2 >Mission Focus</h1>
         </div>
     </div>
     
-    <section class="topics">
+    <section class="topics" >
         
         <div class="wrap-allTopics">
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/dog-run.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/dog-run.jpg" alt="">
                     <p>Responsible Adoption</p>
                 </img>
             </a>
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/cerbatillo.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/cerbatillo.jpg" alt="">
                     <p>Education and Awareness</p>
                 </img>
             </a>
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/rhino-2675891_1280.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/rhino-2675891_1280.jpg" alt="">
                     <p>Rescue and Rehabilitation</p>
                 </img>
             </a>
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/cat-donation.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/cat-donation.jpg" alt="">
                     <p>Volunteering and Donations</p>
                 </img>
             </a>
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/elephants-voluntari.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/elephants-voluntari.jpg" alt="">
                     <p>Legislation and Activism</p>
                 </img>
             </a>
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/people.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/people.jpg" alt="">
                     <p>Testimonials and Success Stories</p>
                 </img>
             </a>
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/wildlife.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/wildlife.jpg" alt="">
                     <p>Wildlife Conservation Initiatives</p>
                 </img>
             </a>
-            <a href="" class="aTopic">
-                <img src="/Image/Topics/event.jpg" alt="">
+            <a href="https://helpingpaws.org/" target="_blank" class="aTopic">
+                <img src="./Image/Topics/event.jpg" alt="">
                     <p>Events and Campaigns</p>
                 </img>
             </a>
@@ -90,17 +94,17 @@
     
     <section class="description">
         <div class="headDescription">
-            <h2>About us</h2>
+            <h2 >About us</h2>
         </div>
-        <div class="wrap-description">
+        <div class="wrap-description" id="aboutUs">
             <div class="wrap-img-description">
-                <img src="/Image/Topics/giraffe-5027700_1280.jpg" alt="imgDescription" height="600px"></img>
+                <img src="./Image/Topics/giraffe-5027700_1280.jpg" alt="imgDescription" height="600px"></img>
             </div>
             <div class="wrap-text-description">
                 <h3>Our Mission and Impact</h3>
                 <p>At Furry Friends Rescue, we are dedicated to protecting and caring for animals in need, both domestic and wild. Our mission is to provide safe shelter, medical care, and loving homes for abandoned and abused animals, including wildlife. From rescuing injured birds to rehabilitating orphaned wildlife, our team is committed to ensuring every animal receives the care they deserve. Your support is crucial in helping us continue our mission. By donating, you are directly contributing to the well-being and future of countless animals, domestic and wild alike. Together, we can make a lasting impact on their lives.</p>
             <div class="wrap-button-description">
-                <button class="boton-description">Donation</button>
+                <a href="#main"><button class="boton-description" id="boton-descrip" >Donation</button></a>
             </div>
             </div>
         </div>
@@ -114,11 +118,11 @@
     
     <section class="description formulario">
         <div class="headDescription">
-            <h2>Contact Form</h2>
+            <h2 >Contact Form</h2>
         </div>
-        <div class="wrap-description">
+        <div class="wrap-description" id="contact">
             
-            <div class="wrap-text-description">
+            <div class="wrap-text-description" >
                 <div>
                     <h3 class="form-h3">Contact us</h3>
                     <form action="" class="wrap-formulario">
@@ -136,7 +140,7 @@
                         <p>Message</p>
                         <textarea name="Message" id="message" rows="10" cols="50" placeholder="Write here..." required></textarea><br><br>
                         <label >
-                            <input class="submit" type="submit" value="Send">
+                            <input class="submit" type="submit" value="Send" >
                         </label>
                     </form>
                     
@@ -147,7 +151,7 @@
             </div>
             </div>--> 
             <div class="wrap-img-description">
-                <img class="mountain" src="/Image/Topics/mountains-4467436_1280.jpg" alt="imgDescription" height="600px"></img>
+                <img class="mountain" src="./Image/Topics/mountains-4467436_1280.jpg" alt="imgDescription" height="600px"></img>
             </div>
         </div>
     </section>
@@ -168,15 +172,15 @@
             <div class="social">
                 <h3>Follow us on social media</h3>
                 <ul>
-                    <li><a href="#"><img src="/Image/facebook-logo-meta-svgrepo-com.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="/Image/letter-x-svgrepo-com.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="/Image/byFreepika.png" alt="Instagram"></a></li>
+                    <li><a href="https://facebook.com/" target="_blank"><img src="./Image/facebook-logo-meta-svgrepo-com.svg" alt="Facebook"></a></li>
+                    <li><a href="https://x.com/X" target="_blank"><img src="./Image/letter-x-svgrepo-com.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./Image/byFreepika.png" alt="Instagram"></a></li>
                     <!-- Añade más iconos de redes sociales según sea necesario -->
                 </ul>
             </div>
         </div>
     </footer>
 
-    <script src="landinONG.js"></script>
+    <script src="landingONG.js"></script>
 </body>
 </html>
